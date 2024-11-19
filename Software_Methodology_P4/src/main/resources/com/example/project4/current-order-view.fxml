@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" spacing="10" alignment="TOP_CENTER" prefWidth="600" prefHeight="400" fx:controller="com.example.project4.controllers.CurrentOrderController" >
+    <Label text="Current Order" style="-fx-font-size: 22px; -fx-font-weight: bold;" />
+
+    <HBox spacing="10" alignment="CENTER">
+        <Label text="Order Number" />
+        <TextField fx:id="orderNumberField" prefWidth="50" editable="false" />
+    </HBox>
+
+    <ListView fx:id="orderListView" prefHeight="150" prefWidth="500" />
+
+    <HBox spacing="10" alignment="CENTER">
+        <Label text="Subtotal $" />
+        <TextField fx:id="subtotalField" prefWidth="80" editable="false" />
+        <Label text="Sales Tax $" />
+        <TextField fx:id="salesTaxField" prefWidth="80" editable="false" />
+        <Label text="Order Total $" />
+        <TextField fx:id="orderTotalField" prefWidth="80" editable="false" />
+    </HBox>
+
+    <HBox spacing="20" alignment="CENTER">
+        <Button fx:id="removePizzaButton" text="Remove Pizza" onAction="#handleRemovePizza" prefWidth="120" />
+        <Button fx:id="clearOrderButton" text="Clear Order" onAction="#handleClearOrder" prefWidth="120" />
+    </HBox>
+
+    <Button fx:id="placeOrderButton" text="Place Order" onAction="#handlePlaceOrder" prefWidth="150" style="-fx-font-size: 14px;" />
+</VBox>

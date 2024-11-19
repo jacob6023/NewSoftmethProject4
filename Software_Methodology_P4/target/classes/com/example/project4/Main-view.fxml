@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane prefHeight="520.0" prefWidth="573.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.project4.controllers.MainViewController">
+
+    <children>
+        <ImageView fitHeight="573.0" fitWidth="573.0" layoutY="-26.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../../../RUPizzaImages/Beige.png" />
+            </image>
+        </ImageView>
+        <VBox alignment="CENTER" layoutX="150.0" layoutY="50.0" spacing="15.0">
+            <children>
+                <Label style="-fx-font-size: 24px; -fx-font-weight: bold;" text="Welcome to RU Pizzeria" />
+
+                <Button onAction="#handleChicagoStyle" prefHeight="40" prefWidth="200" text="Order Chicago-Style Pizza" />
+
+                <Button onAction="#handleNYStyle" prefHeight="40" prefWidth="200" text="Order New York-Style Pizza" />
+
+                <Button onAction="#handleViewOrder" prefHeight="40" prefWidth="200" text="View Current Order" />
+
+                <Button onAction="#handleOrderDetails" prefHeight="40" prefWidth="200" text="Order Details" />
+
+            </children>
+            <padding>
+                <Insets bottom="20" left="20" right="20" top="20" />
+            </padding>
+        </VBox>
+        <ImageView fitHeight="112.0" fitWidth="280.0" layoutX="21.0" layoutY="430.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../../../RUPizzaImages/RutgersLogo.png" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="344.0" layoutY="361.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../../../RUPizzaImages/RUPizza.png" />
+            </image>
+        </ImageView>
+    </children>
+
+</AnchorPane>
